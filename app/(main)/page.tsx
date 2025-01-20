@@ -24,7 +24,11 @@ export default function Home() {
     {
       label: "deepseek-chat",
       value: "deepseek-chat",
-    }
+    },
+    {
+      label: "deepseek-reasoner",
+      value: "deepseek-reasoner",
+    },
   ];
   let [model, setModel] = useState(models[0].value);
   let [shadcn, setShadcn] = useState(false);
