@@ -46,7 +46,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="py-4 text-center text-sm text-gray-500">
-          Powered by Deepseek R1
+          Powered by <a href="https://www.deepseek.com/" className="underline hover:text-gray-700" rel="dofollow">Deepseek R1</a>
         </footer>
       </body>
     </html>

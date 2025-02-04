@@ -22,6 +22,13 @@ export default function Footer() {
             Inspired on Llamacoder
           </a>
           .
+          <a
+            href="https://busydeepseek.com/"
+            className="font-semibold text-blue-600 underline-offset-4 transition hover:text-gray-700 hover:underline"
+            target="_blank"
+          >
+            Explore Deepseek AI
+          </a>
         </div>
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
