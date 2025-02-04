@@ -26,8 +26,9 @@ export default function Footer() {
             href="https://busydeepseek.com/"
             className="font-semibold text-blue-600 underline-offset-4 transition hover:text-gray-700 hover:underline"
             target="_blank"
+            rel="dofollow noopener noreferrer"
           >
-            Explore Deepseek AI
+            Discover Deepseek AI
           </a>
         </div>
       </div>
