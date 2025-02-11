@@ -24,3 +24,5 @@ You can also experiment with DeepSeek models on the [DeepSeek Platform](https://
 3. Run `npm install` and `npm run dev` to install dependencies and run locally
 
 **This is a personal project and not affiliated with DeepSeek**
+
+*Explore DeepSeek AI [here](https://busydeepseek.com/)*
