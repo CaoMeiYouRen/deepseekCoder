@@ -11,7 +11,7 @@ export default function Footer() {
             className="font-semibold text-blue-600 underline-offset-4 transition hover:text-gray-700 hover:underline"
             target="_blank"
           >
-            Deepseek API
+            DeepSeek API
           </a>{" "}
           and{" "}
           <a
@@ -28,7 +28,7 @@ export default function Footer() {
             target="_blank"
             rel="dofollow noopener noreferrer"
           >
-            Discover Deepseek AI
+            Discover DeepSeek AI
           </a>
         </div>
       </div>

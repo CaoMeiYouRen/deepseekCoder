@@ -4,7 +4,6 @@ import CodeViewer from "@/components/code-viewer";
 import { useScrollTo } from "@/hooks/use-scroll-to";
 import { CheckIcon } from "@heroicons/react/16/solid";
 import { ArrowLongRightIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
-import { ArrowUpOnSquareIcon } from "@heroicons/react/24/outline";
 import * as Select from "@radix-ui/react-select";
 import * as Switch from "@radix-ui/react-switch";
 import { AnimatePresence, motion } from "framer-motion";
@@ -22,12 +21,12 @@ export default function Home() {
   let [prompt, setPrompt] = useState("");
   let models = [
     {
-      label: "deepseek-chat",
-      value: "deepseek-chat",
+      label: "deepseek-r1",
+      value: "deepseek-reasoner",
     },
     {
-      label: "deepseek-reasoner",
-      value: "deepseek-reasoner",
+      label: "deepseek-v3",
+      value: "deepseek-chat",
     },
   ];
   let [model, setModel] = useState(models[0].value);
@@ -111,13 +110,13 @@ export default function Home() {
         target="_blank"
       >
         <span className="text-center">
-          Powered by <span className="font-medium">Deepseek API</span>
+          Powered by <span className="font-medium">DeepSeek R1</span>
         </span>
       </a>
-      <h1 className="my-6 max-w-3xl text-4xl font-bold text-gray-800 sm:text-6xl">
-        Turn your <span className="text-blue-600">idea</span>
-        <br /> into an <span className="text-blue-600">app</span>
-      </h1>
+      <h2 className="my-6 max-w-3xl text-4xl font-bold text-gray-800 sm:text-6xl">
+        DeepSeek <span className="text-blue-600">R1</span>
+        <br /> code <span className="text-blue-600">generator</span>
+      </h2>
 
       <form className="w-full max-w-xl" onSubmit={createApp}>
         <fieldset disabled={loading} className="disabled:opacity-75">

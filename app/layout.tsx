@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-let title = "Deepseek Coder – AI Code Generator";
-let description = "Generate your next app with Deepseek R1 and Deepseek V3";
-let url = "https://www.deepseek.com/";
+let title = "DeepSeek R1 Code Generator – DeepBolt";
+let description = "DeepSeek R1 code generator and DeepSeek V3 code generator";
+let url = "https://deepbolt.xyz/";
 let ogimage = "/images/og-image.svg";
-let sitename = "deepseek.com";
+let sitename = "deepbolt.xyz";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
