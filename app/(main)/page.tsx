@@ -253,6 +253,64 @@ export default function Home() {
           </div>
         </motion.div>
       )}
+
+      {/* 新增介绍和FAQ部分 */}
+      <div className="w-full max-w-4xl mx-auto mt-20 px-4 text-left">
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-gray-800">
+            About DeepSeek R1 Code Generator
+          </h2>
+          <p className="text-lg text-gray-600 mb-4">
+            DeepSeek R1 Code Generator is a <span className="font-semibold">free</span> AI-powered tool that helps developers generate high-quality code instantly. Powered by DeepSeek's advanced R1 model, this code generator transforms your ideas into production-ready code.
+          </p>
+          <p className="text-lg text-gray-600">
+            Whether you're building a simple calculator or a complex web application, DeepSeek Code Generator provides intelligent, context-aware code suggestions completely <span className="font-semibold">free of charge</span>.
+          </p>
+        </section>
+
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold mb-8 text-gray-800">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-semibold mb-3 text-gray-700">
+                What is DeepSeek R1 Code Generator?
+              </h3>
+              <p className="text-gray-600">
+                DeepSeek R1 Code Generator is a <span className="font-semibold">free</span> AI tool that generates code based on your natural language descriptions. It uses DeepSeek's state-of-the-art R1 model to understand your requirements and generate appropriate code solutions.
+              </p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-semibold mb-3 text-gray-700">
+                Is DeepSeek Code Generator really free?
+              </h3>
+              <p className="text-gray-600">
+                Yes! DeepSeek R1 Code Generator is completely free to use. You can generate code for your projects without any cost or subscription fees.
+              </p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-semibold mb-3 text-gray-700">
+                What types of code can DeepSeek R1 generate?
+              </h3>
+              <p className="text-gray-600">
+                DeepSeek Code Generator can create various types of applications, from simple scripts to complex web applications. It supports multiple programming languages and frameworks, including React, Next.js, and more.
+              </p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-semibold mb-3 text-gray-700">
+                How accurate is the DeepSeek R1 Code Generator?
+              </h3>
+              <p className="text-gray-600">
+                The DeepSeek R1 Code Generator produces high-quality, production-ready code. It's trained on a vast dataset of code and follows best practices in software development.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   );
 }
