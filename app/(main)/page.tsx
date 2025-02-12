@@ -261,10 +261,10 @@ export default function Home() {
             About DeepSeek R1 Code Generator
           </h2>
           <p className="text-lg text-gray-600 mb-4">
-            DeepSeek R1 Code Generator is a <span className="font-semibold">free</span> AI-powered tool that helps developers generate high-quality code instantly. Powered by DeepSeek's advanced R1 model, this code generator transforms your ideas into production-ready code.
+            DeepSeek R1 Code Generator is a <span className="font-semibold">free</span> AI-powered tool that helps developers generate high-quality code instantly. Powered by DeepSeek&apos;s advanced R1 model, this code generator transforms your ideas into production-ready code.
           </p>
           <p className="text-lg text-gray-600">
-            Whether you're building a simple calculator or a complex web application, DeepSeek Code Generator provides intelligent, context-aware code suggestions completely <span className="font-semibold">free of charge</span>.
+            Whether you&apos;re building a simple calculator or a complex web application, DeepSeek Code Generator provides intelligent, context-aware code suggestions completely <span className="font-semibold">free of charge</span>.
           </p>
         </section>
 
@@ -278,7 +278,7 @@ export default function Home() {
                 What is DeepSeek R1 Code Generator?
               </h3>
               <p className="text-gray-600">
-                DeepSeek R1 Code Generator is a <span className="font-semibold">free</span> AI tool that generates code based on your natural language descriptions. It uses DeepSeek's state-of-the-art R1 model to understand your requirements and generate appropriate code solutions.
+                DeepSeek R1 Code Generator is a <span className="font-semibold">free</span> AI tool that generates code based on your natural language descriptions. It uses DeepSeek&apos;s state-of-the-art R1 model to understand your requirements and generate appropriate code solutions.
               </p>
             </div>
 
@@ -305,7 +305,7 @@ export default function Home() {
                 How accurate is the DeepSeek R1 Code Generator?
               </h3>
               <p className="text-gray-600">
-                The DeepSeek R1 Code Generator produces high-quality, production-ready code. It's trained on a vast dataset of code and follows best practices in software development.
+                The DeepSeek R1 Code Generator produces high-quality, production-ready code. It&apos;s trained on a vast dataset of code and follows best practices in software development.
               </p>
             </div>
           </div>
