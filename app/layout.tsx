@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-let title = "DeepSeek R1 Code Generator – DeepBolt";
-let description = "DeepSeek R1 code generator and DeepSeek V3 code generator";
 let url = "https://deepbolt.xyz/";
 let ogimage = "/public/image/og-image.png";
-let sitename = "deepbolt.xyz";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
-  title,
-  description,
+  title: 'DeepSeek R1 Code Generator',
+  description: 'DeepSeek R1 code generator. An AI code generator that helps you build applications faster.',
+  keywords: 'AI code generator, DeepSeek R1, code assistant, app development, AI programming',
+  alternates: {
+    canonical: 'https://deepbolt.xyz'
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -19,19 +20,23 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [ogimage],
-    title,
-    description,
+    title: 'DeepSeek R1 Code Generator',
+    description: 'TDeepSeek R1 code generator',
     url: url,
-    siteName: sitename,
+    siteName: 'DeepSeek R1 Code Generator',
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     images: [ogimage],
-    title,
-    description,
+    title: 'DeepSeek R1 Code Generator',
+    description: 'DeepSeek R1 code generator',
   },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({

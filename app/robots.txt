@@ -1,1 +1,14 @@
-Allow: /api/og/*
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://deepbolt.xyz/sitemap.xml
+
+# Common crawl paths
+Allow: /images/*
+Allow: /static/*
+
+# Prevent crawling of admin or private areas
+Disallow: /api/*
+Disallow: /admin
+Disallow: /private
