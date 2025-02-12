@@ -9,7 +9,7 @@ export default function Header() {
       <Link href="/" className="absolute flex items-center gap-2">
         <Image alt="DeepSeek R1 Code Generator Logo" src={logo} className="h-5 w-5" />
         <h1 className="text-xl tracking-tight">
-          <span className="text-blue-600">DeepSeek R1</span> Code Generator
+          <span className="text-blue-600">Deepbolt</span>
         </h1>
       </Link>
       <a
