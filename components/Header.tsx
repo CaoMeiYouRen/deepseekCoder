@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/favicon.svg";
+import logo from "../public/favicon.ico";
 import GithubIcon from "./github-icon";
 
 export default function Header() {

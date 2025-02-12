@@ -4,7 +4,7 @@ import "./globals.css";
 let title = "DeepSeek R1 Code Generator – DeepBolt";
 let description = "DeepSeek R1 code generator and DeepSeek V3 code generator";
 let url = "https://deepbolt.xyz/";
-let ogimage = "/images/og-image.svg";
+let ogimage = "/public/image/og-image.png";
 let sitename = "deepbolt.xyz";
 
 export const metadata: Metadata = {
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description,
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.svg', type: 'image/svg+xml', sizes: '32x32' }
+      { url: '/favicon.ico' },
+      { url: '/favicon.ico', sizes: '32x32' }
     ],
   },
   openGraph: {
