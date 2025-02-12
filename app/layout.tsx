@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 let url = "https://deepbolt.xyz/";
@@ -53,6 +54,18 @@ export default function RootLayout({
         <footer className="py-4 text-center text-sm text-gray-500">
           Powered by <a href="https://www.deepseek.com/" className="underline hover:text-gray-700" rel="dofollow">Deepseek R1</a>
         </footer>
+        
+        {/* Google Analytics 追踪代码 */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-99C6XX3HNE" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-99C6XX3HNE');
+          `}
+        </Script>
       </body>
     </html>
   );
