@@ -87,7 +87,7 @@ export default function ImageGenerator() {
         target="_blank"
       >
         <span className="text-center">
-          Powered by <span className="font-medium">DeepSeek Image Generator</span>
+          Powered by <span className="font-medium">DeepSeek Janus-Pro</span>
         </span>
       </a>
       <h1 className="my-6 max-w-3xl text-4xl font-bold text-gray-800 sm:text-6xl">
