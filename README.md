@@ -1,5 +1,5 @@
 <a href="https://www.deepseek-coder.io">
-  <img alt="DeepSeek Coder" src="./public/favicon.svg">
+  <img alt="DeepSeek Coder" src="./public/favicon.ico">
   <h1 align="center">DeepSeek Coder</h1>
 </a>
 
