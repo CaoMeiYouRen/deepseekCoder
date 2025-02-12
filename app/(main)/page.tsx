@@ -41,6 +41,7 @@ export default function Home() {
   let [messages, setMessages] = useState<{ role: string; content: string }[]>(
     [],
   );
+  let [showBanner, setShowBanner] = useState(true);
 
   let loading = status === "creating" || status === "updating";
 
@@ -104,6 +105,29 @@ export default function Home() {
 
   return (
     <main className="mt-12 flex w-full flex-1 flex-col items-center px-4 text-center sm:mt-1">
+      {showBanner && (
+        <div className="fixed top-0 left-0 right-0 bg-yellow-50 p-3">
+          <div className="flex items-center justify-center gap-x-3">
+            <p className="text-sm leading-6 text-yellow-800">
+              DeepSeek API is very busy, wait...
+            </p>
+            <button
+              type="button"
+              className="flex rounded-md bg-yellow-50 p-1 hover:bg-yellow-100"
+              onClick={() => setShowBanner(false)}
+            >
+              <span className="sr-only">Dismiss</span>
+              <svg
+                className="h-5 w-5 text-yellow-800"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
       <a
         className="mb-4 inline-flex h-7 shrink-0 items-center gap-[9px] rounded-[50px] border-[0.5px] border-solid border-[#E6E6E6] bg-[rgba(234,238,255,0.65)] bg-gray-100 px-7 py-5 shadow-[0px_1px_1px_0px_rgba(0,0,0,0.25)]"
         href="https://api-docs.deepseek.com/"
