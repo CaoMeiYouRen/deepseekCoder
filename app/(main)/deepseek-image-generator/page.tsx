@@ -18,7 +18,7 @@ let models = [
 // 添加示例提示词
 const examplePrompts = [
   "The ancient battlefield, thousands of troops and horses to fight, the situation is very fierce, countless casualties",
-  "a beautiful girl with flowers and a bottle of perfume, in the style of art nouveau-inspired illustrations, dark gold and sky-blue, michael martchenko, naoko takeuchi, dark cyan and red, patricia polacco, colorful dreams",
+  "In the style of Makoto Shinkai, operating a holographic screen with both hands, wearing high-tech AR light-emitting gaming glasses with side lenses, within a traditional Chinese room, is a young man in his twenties, a handsome fellow, clad in a gray robe adorned with patterns, with long purple hair. This is a high-quality, animated style with a Chinese ancient flair, featuring meticulous details, at 32k resolution, animated style, Chinese ancient style, at 8k resolution, ultra-high definition.",
   "Chinese style, metallic hues, 3D jade carving, scrolls suspended in mid-air, inscribed with ancient text, poets standing atop the scrolls, background landscape painting, exquisite, vibrant colors, Chinese ancient minimalism, macro perspective, 3D, OC rendering, surreal details, fantasy, high resolution, ultra-high definition.",
   "a beautiful girl with flowers and a bottle of perfume, in the style of art nouveau-inspired illustrations, dark gold and sky-blue, michael martchenko, naoko takeuchi, dark cyan and red, patricia polacco, colorful dreams"
 ];
@@ -166,23 +166,6 @@ export default function ImageGenerator() {
             </div>
           </div>
         </fieldset>
-
-        {/* 在模型选择器后添加示例卡片 */}
-        <div className="mt-8">
-          <p className="text-sm text-gray-500 mb-4">Try these examples:</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {examplePrompts.map((examplePrompt, index) => (
-              <button
-                key={index}
-                type="button"
-                onClick={() => handleExampleClick(examplePrompt)}
-                className="p-4 text-left text-sm border border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition-colors duration-200"
-              >
-                {examplePrompt}
-              </button>
-            ))}
-          </div>
-        </div>
       </form>
 
       <hr className="border-1 mb-20 h-px bg-gray-700 dark:bg-gray-700" />
@@ -232,6 +215,21 @@ export default function ImageGenerator() {
           </div>
         </motion.div>
       )}
+      <div className="mt-8">
+          <p className="text-sm text-gray-500 mb-4">Try these examples:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {examplePrompts.map((examplePrompt, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => handleExampleClick(examplePrompt)}
+                className="p-4 text-left text-sm border border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition-colors duration-200"
+              >
+                {examplePrompt}
+              </button>
+            ))}
+          </div>
+        </div>
 
       {/* 介绍和FAQ部分 */}
       <div className="w-full max-w-4xl mx-auto mt-20 px-4 text-left">
