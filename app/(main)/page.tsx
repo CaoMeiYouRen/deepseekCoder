@@ -41,7 +41,7 @@ export default function Home() {
   let [messages, setMessages] = useState<{ role: string; content: string }[]>(
     [],
   );
-  let [showBanner, setShowBanner] = useState(true);
+  let [showBanner, setShowBanner] = useState(false);
 
   let loading = status === "creating" || status === "updating";
 
